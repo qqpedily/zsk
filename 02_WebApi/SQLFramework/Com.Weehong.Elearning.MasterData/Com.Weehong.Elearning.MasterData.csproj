@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A2008814-7021-44B1-9C3A-67F5987C4BAA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Com.Weehong.Elearning.MasterData</RootNamespace>
+    <AssemblyName>Com.Weehong.Elearning.MasterData</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Com.Weehong.Elearning.MasterData.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\WebApi\WebApiJSD\obj\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>E:\公司项目\唯博赛项目\02_SourceCode\06_Repository\02_WebApi\WebApi\WebApiJSD\obj\Release\Com.Weehong.Elearning.MasterData.XML</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\..\Bin\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.Extended">
+      <HintPath>..\..\Bin\EntityFramework.Extended.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\..\Bin\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\WebApi\packages\Newtonsoft.Json.10.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Pinyin4net, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\WebApi\packages\pinyin4net.1.0.0\lib\net40\Pinyin4net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\Account.cs" />
+    <Compile Include="Common\CacheClass.cs" />
+    <Compile Include="Common\EnumTemplateField.cs" />
+    <Compile Include="Common\JSONHelper.cs" />
+    <Compile Include="Common\OperationData.cs" />
+    <Compile Include="DataAdapter\AttachmentAdapter.cs" />
+    <Compile Include="DataAdapter\Attention\RelationUserAttentionPeriodicalAdapter.cs" />
+    <Compile Include="DataAdapter\Attention\RelationUserAttentionScholarAdapter.cs" />
+    <Compile Include="DataAdapter\Attention\RelationUserAttentionThemeAdapter.cs" />
+    <Compile Include="DataAdapter\Home\UserRegAdapter.cs" />
+    <Compile Include="DataAdapter\Productions\ProductionsAdapter.cs" />
+    <Compile Include="DataAdapter\Productions\ProductionsFieldAdapter.cs" />
+    <Compile Include="DataAdapter\Productions\ProductionsFieldMoreAdapter.cs" />
+    <Compile Include="DataAdapter\Productions\ProductionsUploadFileAdapter.cs" />
+    <Compile Include="DataAdapter\Productions\StaticProductionsAdapter.cs" />
+    <Compile Include="DataAdapter\SysManage\SYS_CollegeAdapter.cs" />
+    <Compile Include="DataAdapter\SysManage\SYS_IdentityTypeAdapter.cs" />
+    <Compile Include="DataAdapter\SysManage\SYS_PositionalTitleTypeAdapter.cs" />
+    <Compile Include="DataAdapter\SysManage\SYS_PostTypeAdapter.cs" />
+    <Compile Include="DataAdapter\SysManage\SYS_SubjectAdapter.cs" />
+    <Compile Include="DataAdapter\SysTemplate\SYS_FullTextPermissionAdapter.cs" />
+    <Compile Include="DataAdapter\SysTemplate\SYS_MetaDataAdapter.cs" />
+    <Compile Include="DataAdapter\SysTemplate\SYS_TemplateAdapter.cs" />
+    <Compile Include="DataAdapter\SysTemplate\SYS_TemplateCustomFormattingAdapter.cs" />
+    <Compile Include="DataAdapter\SysTemplate\SYS_TemplateEntryListCustomizationAdapter.cs" />
+    <Compile Include="DataAdapter\SysTemplate\SYS_TemplateFieldAdapter.cs" />
+    <Compile Include="DataAdapter\SysTemplate\SYS_TemplateFieldModelAdapter.cs" />
+    <Compile Include="DataAdapter\TypeNameCount.cs" />
+    <Compile Include="DataAdapter\UseGroup\Rrelation_UseGroupAdapter.cs" />
+    <Compile Include="DataAdapter\UseGroup\Rrelation_UseGroup_UseGroupAdapter.cs" />
+    <Compile Include="DataAdapter\UseGroup\Rrelation_UseGroup_UserAdapter.cs" />
+    <Compile Include="DataAdapter\Users\RelationUserClaimWorksAdapter.cs" />
+    <Compile Include="DataAdapter\Users\RelationUserCollectPeriodicalAdapter.cs" />
+    <Compile Include="DataAdapter\Users\RelationUserCollectProductAdapter.cs" />
+    <Compile Include="DataAdapter\Users\RelationUserCollectScholarAdapter.cs" />
+    <Compile Include="DataAdapter\Users\RelationUserCollectThemeAdapter.cs" />
+    <Compile Include="DataAdapter\Users\MainUserAdapter.cs" />
+    <Compile Include="DataAdapter\Users\UserCitationProductionsAdapter.cs" />
+    <Compile Include="DataAdapter\Users\StatisticalAdapter.cs" />
+    <Compile Include="DataAdapter\Users\UserPrivateLetterAdapter.cs" />
+    <Compile Include="DataAdapter\Users\UserCommentAdapter.cs" />
+    <Compile Include="DataModels\AttachmentModel.cs" />
+    <Compile Include="DataAdapter\Users\UserAdapter.cs" />
+    <Compile Include="DataAdapter\Users\UserAliaAdapter.cs" />
+    <Compile Include="DataAdapter\Users\UserContactInformationAdapter.cs" />
+    <Compile Include="DataAdapter\Users\UserEnglishLevelAdpter.cs" />
+    <Compile Include="DataAdapter\Users\UserHonorAdapter.cs" />
+    <Compile Include="DataAdapter\Users\UserHonorAwardAdapter.cs" />
+    <Compile Include="DataAdapter\Users\UserInsidePrincipalOfficeAdapter.cs" />
+    <Compile Include="DataAdapter\Users\UserLearningExperienceAdapter.cs" />
+    <Compile Include="DataAdapter\Users\UserOtherPrincipalOfficeAdapter.cs" />
+    <Compile Include="DataAdapter\Users\UserPersonalHomepageAdapter.cs" />
+    <Compile Include="DataAdapter\Users\UserPracticeQualificationAdapter.cs" />
+    <Compile Include="DataAdapter\Users\UserResearchProjectAdapter.cs" />
+    <Compile Include="DataAdapter\Users\UserSearchDirectionAdapter.cs" />
+    <Compile Include="DataAdapter\Users\UserWorkExperienceAdapter.cs" />
+    <Compile Include="DataModels\Attention\RelationUserAttentionPeriodicalModel.cs" />
+    <Compile Include="DataModels\Attention\RelationUserAttentionScholarModel.cs" />
+    <Compile Include="DataModels\Attention\RelationUserAttentionThemeModel.cs" />
+    <Compile Include="DataModels\DicData.cs" />
+    <Compile Include="DataModels\ExtendModel\ContentType.cs" />
+    <Compile Include="DataModels\ExtendModel\ImportantResults.cs" />
+    <Compile Include="DataModels\ExtendModel\maxDownLoad.cs" />
+    <Compile Include="DataModels\ExtendModel\ScholarsRecommend.cs" />
+    <Compile Include="DataModels\Home\UserReg.cs" />
+    <Compile Include="DataModels\Output\ProductionOutPut.cs" />
+    <Compile Include="DataModels\ProductionsUploadFileModel.cs" />
+    <Compile Include="DataModels\Productions\Production.cs" />
+    <Compile Include="DataModels\Productions\ProductionsField.cs" />
+    <Compile Include="DataModels\Productions\ProductionsFieldMore.cs" />
+    <Compile Include="DataModels\Productions\ProductionsModel.cs" />
+    <Compile Include="DataModels\Productions\ProductionsUploadFile.cs" />
+    <Compile Include="DataModels\Productions\ProductionTotal.cs" />
+    <Compile Include="DataModels\Productions\StaticProductions.cs" />
+    <Compile Include="DataModels\ReportForm\AchievementsType.cs" />
+    <Compile Include="DataModels\SysManage\SYS_College.cs" />
+    <Compile Include="DataModels\SysManage\SYS_IdentityType.cs" />
+    <Compile Include="DataModels\SysManage\SYS_PositionalTitleType.cs" />
+    <Compile Include="DataModels\SysManage\SYS_PostType.cs" />
+    <Compile Include="DataModels\SysManage\SYS_Subject.cs" />
+    <Compile Include="DataModels\SysTemplate\SYS_FullTextPermission.cs" />
+    <Compile Include="DataModels\SysTemplate\SYS_MetaData.cs" />
+    <Compile Include="DataModels\SysTemplate\SYS_Template.cs" />
+    <Compile Include="DataModels\SysTemplate\SYS_TemplateCustomFormatting.cs" />
+    <Compile Include="DataModels\SysTemplate\SYS_TemplateEntryListCustomization.cs" />
+    <Compile Include="DataModels\SysTemplate\SYS_TemplateField.cs" />
+    <Compile Include="DataModels\UseGroup\Relation_UseGroup.cs" />
+    <Compile Include="DataModels\UseGroup\Relation_UseGroup_UseGroup.cs" />
+    <Compile Include="DataModels\UseGroup\Relation_UseGroup_User.cs" />
+    <Compile Include="DataModels\Users\RelationUserCollectPeriodicalModel.cs" />
+    <Compile Include="DataModels\Users\RelationUserCollectProductModel.cs" />
+    <Compile Include="DataModels\Users\RelationUserCollectScholarModel.cs" />
+    <Compile Include="DataModels\Users\RelationUserClaimWorksModel.cs" />
+    <Compile Include="DataModels\Users\RelationUserCollectThemeModel.cs" />
+    <Compile Include="DataModels\Users\UserCitationProductions.cs" />
+    <Compile Include="DataModels\Users\UserCommentModels.cs" />
+    <Compile Include="DataModels\Users\UserInfo.cs" />
+    <Compile Include="DataModels\Users\UserList.cs" />
+    <Compile Include="DataModels\Users\UserModel.cs" />
+    <Compile Include="DataModels\Users\UserAliaModel.cs" />
+    <Compile Include="DataModels\Users\UserContactInformationModel.cs" />
+    <Compile Include="DataModels\Users\UserEnglishLevelModel.cs" />
+    <Compile Include="DataModels\Users\UserHonorModel.cs" />
+    <Compile Include="DataModels\Users\UserHonorAwardModel.cs" />
+    <Compile Include="DataModels\Users\UserInsidePrincipalOfficeModel.cs" />
+    <Compile Include="DataModels\Users\UserLearningExperienceModel.cs" />
+    <Compile Include="DataModels\Users\UserOtherPrincipalOfficeModel.cs" />
+    <Compile Include="DataModels\Users\UserPersonalHomepageModel.cs" />
+    <Compile Include="DataModels\Users\UserPracticeQualificationModel.cs" />
+    <Compile Include="DataModels\Users\UserPrivateLetterModels.cs" />
+    <Compile Include="DataModels\Users\UserResearchProjectModel.cs" />
+    <Compile Include="DataModels\Users\UserSearchDirectionModel.cs" />
+    <Compile Include="DataModels\Users\UserTotal.cs" />
+    <Compile Include="DataModels\Users\UserWorkExperienceModel.cs" />
+    <Compile Include="Interface\IDataAdapter.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\OperationManagerDbContext.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DataAdapter\DataAdapterView\" />
+    <Folder Include="DataAdapter\LinqModel\" />
+    <Folder Include="DataModels\BaseModels\" />
+    <Folder Include="DataModels\DataView\" />
+    <Folder Include="TestModel\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Framework\Com.Weehong.Elearning.DataObjects\Com.Weehong.Elearning.DataObjects.csproj">
+      <Project>{f11dad92-f926-40f0-8d4b-164898f01d22}</Project>
+      <Name>Com.Weehong.Elearning.DataObjects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\WebApi\Com.Weehong.Elearning.DBHelper\Com.Weehong.Elearning.DBHelper.csproj">
+      <Project>{8eb966c4-0e0c-4cbd-a8bc-57af3d7f9882}</Project>
+      <Name>Com.Weehong.Elearning.DBHelper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\WebApi\Com.Weehong.Elearning.Files\Com.Weehong.Elearning.Files.csproj">
+      <Project>{E83F5E30-6C33-41D9-A54B-2EC760A2AE0C}</Project>
+      <Name>Com.Weehong.Elearning.Files</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

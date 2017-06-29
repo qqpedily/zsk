@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiZSK", "WebApiJSD\WebApiZSK.csproj", "{CBA6C020-237B-46C6-84C4-716B7187DA03}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FrameworkProject", "FrameworkProject", "{7AF7E537-4774-49FD-84A4-78A894A4DF3D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Com.Weehong.Elearning.Domain", "Com.Weehong.Elearning.Domain\Com.Weehong.Elearning.Domain.csproj", "{ADE6BBC5-B73A-4490-8894-2493000E9A0C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Com.Weehong.Elearning.MasterData", "..\SQLFramework\Com.Weehong.Elearning.MasterData\Com.Weehong.Elearning.MasterData.csproj", "{A2008814-7021-44B1-9C3A-67F5987C4BAA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Com.Weehong.Elearning.DataObjects", "..\Framework\Com.Weehong.Elearning.DataObjects\Com.Weehong.Elearning.DataObjects.csproj", "{F11DAD92-F926-40F0-8D4B-164898F01D22}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Com.Weehong.Elearning.Files", "Com.Weehong.Elearning.Files\Com.Weehong.Elearning.Files.csproj", "{E83F5E30-6C33-41D9-A54B-2EC760A2AE0C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Com.Weehong.Elearning.DBHelper", "Com.Weehong.Elearning.DBHelper\Com.Weehong.Elearning.DBHelper.csproj", "{8EB966C4-0E0C-4CBD-A8BC-57AF3D7F9882}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CBA6C020-237B-46C6-84C4-716B7187DA03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBA6C020-237B-46C6-84C4-716B7187DA03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBA6C020-237B-46C6-84C4-716B7187DA03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBA6C020-237B-46C6-84C4-716B7187DA03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADE6BBC5-B73A-4490-8894-2493000E9A0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADE6BBC5-B73A-4490-8894-2493000E9A0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADE6BBC5-B73A-4490-8894-2493000E9A0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADE6BBC5-B73A-4490-8894-2493000E9A0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2008814-7021-44B1-9C3A-67F5987C4BAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2008814-7021-44B1-9C3A-67F5987C4BAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2008814-7021-44B1-9C3A-67F5987C4BAA}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2008814-7021-44B1-9C3A-67F5987C4BAA}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{F11DAD92-F926-40F0-8D4B-164898F01D22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F11DAD92-F926-40F0-8D4B-164898F01D22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F11DAD92-F926-40F0-8D4B-164898F01D22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F11DAD92-F926-40F0-8D4B-164898F01D22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E83F5E30-6C33-41D9-A54B-2EC760A2AE0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E83F5E30-6C33-41D9-A54B-2EC760A2AE0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E83F5E30-6C33-41D9-A54B-2EC760A2AE0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E83F5E30-6C33-41D9-A54B-2EC760A2AE0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EB966C4-0E0C-4CBD-A8BC-57AF3D7F9882}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EB966C4-0E0C-4CBD-A8BC-57AF3D7F9882}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EB966C4-0E0C-4CBD-A8BC-57AF3D7F9882}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EB966C4-0E0C-4CBD-A8BC-57AF3D7F9882}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F11DAD92-F926-40F0-8D4B-164898F01D22} = {7AF7E537-4774-49FD-84A4-78A894A4DF3D}
+		{E83F5E30-6C33-41D9-A54B-2EC760A2AE0C} = {7AF7E537-4774-49FD-84A4-78A894A4DF3D}
+		{8EB966C4-0E0C-4CBD-A8BC-57AF3D7F9882} = {7AF7E537-4774-49FD-84A4-78A894A4DF3D}
+	EndGlobalSection
+EndGlobal

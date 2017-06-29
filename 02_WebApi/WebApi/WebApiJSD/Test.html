@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <meta charset="utf-8" />
+    <script src="Lib/jquery/dist/jquery.js"></script>
+    <script type="text/javascript">
+
+        $(function () {
+            $("#btnGetRepayTaskList").on("click", function () {//btnGetRepayTaskList-------------------------------------
+                var _backstageid = $("#backstageid").val();
+
+                var JsonData = {
+                    contract: {
+                        ContractID: "WEIJINHUI0001234",
+                        Schedule: 2,
+                        Amount: 1000,
+                        Period: 12,
+                        PaymentMethod: 1,
+                        Identification: 1,
+                        LoanDt: "2016-10-09",
+                        ExpireDt: "2017-10-09",
+                        Creditlevelid: 1,
+                        ContractRate: 0.12,
+                        Customer: {
+                            Name: "李毅",
+                            Idno: "121001198011020235",
+                            Gender: 1,
+                            Email: "123@321.com",
+                            Address: "北京朝阳",
+                            Income: 10000,
+                            Maritalstatus: "已婚",
+                            Companyname: "智慧家居",
+                            School: "北京大学",
+                            Highestedu: "硕士",
+                            Graduationtime: "2004年7月",
+                            Major: "心理学",
+                            Adminname: "liyi123",
+                            Bankcardno: "6215223102153026",
+                            Cellphoneno: "13588888888",
+                            Deposit: "朝阳国贸分行",
+                            Status: "现住址朝阳区",
+                            Creditlevel_ID: 1
+                        }
+                    }                   
+                };
+
+
+                //var JsonData = {
+                //    orderNum: _backstageid
+                //};
+                var _data = JSON.stringify(JsonData);
+
+                $.ajax({
+                    // url: "http://10.0.130.35:8088/JSDWebApi/Repayment/GetContractInfoAdapter",
+                    url: "http://10.0.130.35:8088/JSDWebApi/Contract/AddContractInfo",
+                    type: "POST",
+                    data: JsonData,
+                    success: function (data) {
+                        var str = JSON.stringify(data);
+                        $("#txtDownGetRepayTaskList").val(str);
+                    },
+                    error: function (data) {
+                        var str = JSON.stringify(data);
+                        $("#txtDownGetRepayTaskList").val(str);
+                    }
+                });
+            });
+        });//-----------------------------------------------------------------------
+        //WebApi/Account/GetContractInfoAdapter?orderNum=BJ00000003
+
+    </script>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <input id="backstageid" type="text" value="HEB120160929690001" />
+            </td>
+            <td>
+                <input type="button" value="提交" id="btnGetRepayTaskList" />
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <textarea id="txtDownGetRepayTaskList" class="txt" style="width:500px;height:500px;"></textarea>
+
+            </td>
+        </tr>
+
+    </table>
+
+
+</body>
+</html>

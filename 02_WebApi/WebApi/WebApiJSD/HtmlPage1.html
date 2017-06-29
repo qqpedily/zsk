@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <script src="http://cdn.static.runoob.com/libs/angular.js/1.4.6/angular.min.js"></script>
+    <script src="Lib/jquery/dist/jquery.js"></script>
+    <script>
+
+            function wholeController($scope,$rootScope,$injector)
+            {
+                $scope.buttons = ["button1","button2","button3"];
+
+                $scope.method1 = function(){
+                     var scope0 = angular.element($("#btn0")[0]).scope();
+                     scope0.buttons = ["a1","b1","c1"];
+                };
+
+                $scope.method2 = function(){
+                     var scope0 = angular.element($("#btn0")[0]).scope();
+                     scope0.$parent.buttons = ["a2","b2","c2"];
+                };
+
+                $scope.method3 = function(){
+                    var scope0 = angular.element($("#btn0")[0]).scope();
+                    scope0.buttons[0] = "a3";
+                    scope0.buttons[1] = "b3";
+                    scope0.buttons[2] = "c3";
+                };
+            }
+    </script>
+</head>
+<body>
+
+    <div ng-app="">
+        <p>名字 : <input type="text" ng-model="name"></p>
+        <h1>Hello {{name}}</h1>
+    </div>
+    <div id="first" ng-controller="wholeController">
+        <div id="buttonDiv">
+            <input type="button" ng-repeat="button in buttons" id="btn{{$index}}" value="{{button}}" />
+        </div>
+        <input type="button" value="method1" ng-click="method1();">
+        <input type="button" value="method2" ng-click="method2();">
+        <input type="button" value="method3" ng-click="method3();">
+    </div>
+</body>
+</html>
